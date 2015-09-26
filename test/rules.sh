@@ -29,6 +29,7 @@ if [ $# -gt 0 ] ; then
 fi
 if ! python2.7 test/rules/src/https_everywhere_checker/check_rules.py \
       test/rules/coverage.checker.config; then
+  set +x
   echo "Ruleset test coverage was insufficient."
   echo ""
   echo "Under the new ruleset testing rules (February 2015), any modified ruleset"
@@ -37,6 +38,7 @@ if ! python2.7 test/rules/src/https_everywhere_checker/check_rules.py \
   echo "wildcard <target> tags. See these documents:"
   echo "https://github.com/EFForg/https-everywhere/blob/master/ruleset-testing.md"
   echo "https://github.com/EFForg/https-everywhere/blob/master/ruleset-style.md"
+  set -x
   exit 1
 else
   exit 0
