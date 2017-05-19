@@ -125,7 +125,6 @@
 	<target host="help-ja-jp.nike.com" />
 	<target host="help-nl-eu.nike.com" />
 	<target host="help-pt-br.nike.com" />
-	<target host="help-zh-tw.nike.com" />
 	<target host="origin-www.nike.com" />
 	<target host="secure-nikeplus.nike.com" />
 	<target host="secure-niketown.nike.com" />
